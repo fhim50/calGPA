@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <link href='./css/calGPA.css' rel="stylesheet"/>
+    </head>
+    <body onload=''>
+      <div class="mainColumn" id='mainColumn'>
+        <div class="navBar">
+          <li class="logo">
+            <span onclick="Javascript:location.reload() ">calGPA</span>
+          </li>
+          <li>
+            <span>Home</span>
+          </li>
+          <li>
+            <span>Some</span>
+          </li>
+          <li>
+            <span>link</span>
+          </li>
+        </div>
+        <div class="clear">
+          
+        </div><!-- end navBar-->
+        <div class="actionPannel" title="calculate GPA  or CGPA">
+          <li class="action">
+            <span>calculate</span>
+            <p>
+              <span title="calculate GPA" id="GPA">GPA</span>
+              <span title="calculate CGPA" id="CGPA">CGPA</span>
+            </p>
+          </li>
+          <li class="results" id='mainResult'>
+            3.00004
+          </li>
+          <li class="results" id="mainResult1">
+            4.005
+          </li>
+          <li class="results" id="mainResult2">
+            4.005
+          </li>
+           <!--<div class="clear"></div>-->
+        </div><!-- end actionpannel-->
+        <div class="section" id="section-0">
+          <div class="nav">
+            <div class="label">
+              <p>Some label</p>
+            </div>
+            <div class="addRemove">  
+              <div class="iconsRemove" id="removeSubject-0"></div>
+              <div class="iconsAdd" id="addSubject-0"></div>
+            </div>
+          </div><!-- end nav -->
+          <div class="calColumn" id="calColumn-0">
+            <div class="formRow" id="formRow">
+              <form id="form-0" name="calGPA-0" accessKey=0>
+                <div class="all mainLabel">Subject</div> 
+                <div class="all creditLabel">Credit</div>
+                <div class="all">
+                  <select id="sel0"class="credit"style="color: #999999; font-size: 17px;">
+                    <option  class="opt" value=1>One</option>
+                    <option  value=2>Two</option>
+                    <option  value=3>Three</option>
+                    <option  value=4>Four</option>
+                  </select>
+                </div>
+                <div class="all gradeLabel">Grade</div>
+                <div class="all">
+                  <select id="sel1"class="grade"style="color: #999999; font-size: 17px;">
+                    <option  class="opt" value=4.0>A</option>
+                    <option  value=3.75>B+</option>
+                    <option  value=3.50>B</option>
+                    <option  value=3.25>B-</option>
+                    <option  class="opt" value=3.0.>C+</option>
+                    <option  class="opt" value=2.50>C</option>
+                    <option  class="opt" value=2.0>D</option>
+                    <option  class="opt" value=0.0>F</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+            
+          </div><!-- end calColumn -->
+        </div><!-- end section-->
+
+      </div><!-- end mainColumn -->
+    <script type="application/x-javascript" src="js/calGPA.js"></script>
+    </body>
+  </html>

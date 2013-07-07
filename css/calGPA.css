@@ -1,0 +1,230 @@
+body{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #999999;
+  margin: 0;
+}
+li,ul{
+  list-style: none;
+}
+.mainColumn{
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  height: 600px;
+  /*border: 1px solid #666;*/
+}
+
+.navBar{
+  position: relative;
+  top: 0;
+  width: 800px;
+  height: 40px;
+  border-bottom: 2px solid #666;
+  /*background: #E0E0DD;*/
+}
+.navBar .itemContainer{
+  
+}
+.navBar li{
+  font-weight: bolder;
+  list-style: none;
+  float: left;
+  margin:0 ;
+  padding-top: 10px;
+  width: 70px;
+  height: 29px;
+  text-align: center;
+  color: #999999;
+  /*border-left: 1px solid rgba(0,0,0,0.7);*/
+  
+}
+.navBar li.logo{
+  width: 200px;
+}
+.navBar li span{
+  margin: 0;
+  cursor: pointer;
+}
+.navBar li:hover span{
+  color: #0381a5;
+}
+.clear{
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+  display: block;
+  width: 0px;
+  height: 0px;
+}
+.actionPannel{
+  width: 650px;
+  height: 35px;
+  margin: 10px auto;
+  /*border: 1px solid red;*/
+}
+.actionPannel li.action{
+  float: left;
+  height: 22px;
+  width: 70px;
+  margin: 2px;
+  padding: 5px;
+  cursor: pointer;
+  text-align: center;
+  background: #0381a5;
+}
+
+.actionPannel li.action:hover{
+  color: #ffffff;
+}
+.actionPannel li.action span{
+  margin-top: 12px;
+}
+.actionPannel li.action p{
+  display: none;
+  position: relative;
+  top: -40px;
+  left: 73.5px;
+  height: 65px;
+  width: 100px;
+  color: #999999;
+  border: 1px solid #0381a5;
+}
+
+.actionPannel li.action:hover p{
+  display: block;
+}
+.actionPannel li.action p span{
+  display: block;
+  text-align: center;
+ 
+}
+.actionPannel li.action p span:hover{
+  cursor: pointer;
+}
+.actionPannel li.action p span:first-child{
+  border-bottom: 1px solid #0381a5;
+}
+.actionPannel li.results{
+  float: right;
+  height: 20px;
+  width: 70px;
+  margin: 2px;
+  padding: 5px;
+  visibility: hidden;
+  text-align: center;
+  border: 1px solid #0381a5;
+}
+.section{
+  width: 650px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #ffffff;
+}
+
+.section .nav{
+  float: right;
+  margin-right: 5px;
+  margin-top: 5px;
+  padding: 2px;
+  width: 300px;
+  height: 40px;
+}
+
+.section .nav .label{
+  float: left;
+  margin-left: 55px;
+  width: 150px;
+  height: 18px;
+  padding: 10px;
+  
+}
+.section .nav .label p{
+  display: inline;
+  margin-left: 61px;
+  font-weight: bold;
+ 
+  
+}
+.section .nav .addRemove{
+  float: right;
+  width:70px;
+  height:35px;
+}
+.section .nav .addRemove .iconsAdd{
+  float: right;
+  height: 24px;
+  width: 24px;
+  margin: 3px 5px;
+  cursor: pointer;
+  background: url(../img/add.png) no-repeat center;
+}
+.section .nav .addRemove .iconsRemove{
+  float: right;
+  height: 24px;
+  width: 24px;
+  margin: 3px 5px;
+  cursor: pointer;
+  background: url(../img/remove.png) no-repeat center; 
+  
+}
+.section .nav .addRemove .iconsRemove:active{
+  margin-top: -0.1px;
+}
+.section .nav .addRemove .iconsAdd:active{
+  margin-top: -0.1px;
+}
+
+.calColumn{
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+
+}
+.formRow{
+  width: 500px;
+  height: 40px;
+  margin: 5px auto;
+
+}
+
+.all{
+  float: left;
+  height: 25px;
+  width: 90px;
+  margin-left: 5px;
+  margin-top: 1px;
+  padding-top: 10px;
+  display: inline;
+
+  text-align: center;
+}
+.mainLabel{
+  
+}
+.creditLabel{
+  
+}
+.credit{
+  margin-top: -8px;
+  outline: none;
+  border: none;
+  background-color: #ffffff;
+}
+
+.opt{
+  
+}
+.opt:focus{
+
+}
+.gradeLabel{
+  
+}
+.grade{
+  margin-top: 0;
+  outline: none;
+  border: none;
+  background-color: #ffffff;
+}
