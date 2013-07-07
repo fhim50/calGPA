@@ -90,14 +90,37 @@ function makeNewSection() {
     //adds a new section or new formset for calculating the gpa in that period
     var mainColumn = document.getElementById('mainColumn');
     var newSection = document.createElement('div');
+    var newCalColumn = document.createElement('div');
+    var newNav = document.createElement('div');
+    var newRemoveSubject = document.createElement('div');
+    var newAddSubject = document.createElement('div');
     var allSection = document.getElementsByClassName('section');//get all class with name section for duplecation
     var lastSection = allSection[allSection.length-1];
     var lastSectionContent = lastSection.innerHTML;
     var currentSectionId = lastSection.id;var newSectionNumber = parseInt(currentSectionId.split('-')[1])+1;
     var newSectionId = 'section-'+newSectionNumber;
-    
-    //lastSectionContent = lastSectionContent.replace(currentSectionId,newSectionId);
-    newSection.setAttribute('class','section');newSection.setAttribute('id',newSectionId);
-    newSection.innerHTML = lastSectionContent;
-    mainColumn.appendChild(newSection);
+    var nav = allSection[0].getElementsByClassName('nav')[0];//get the first element with class nav
+    var calColumn = allSection[0].getElementsByClassName('calColumn')[0]//get the first element with class calColume
+    var navContent = nav.innerHTML;
+    var calColumnContent = calColumn.innerHTML;
+    //section
+    newSection.setAttribute('class','section');
+    newSection.setAttribute('id',newSectionId);
+    //nav
+    newNav.setAttribute('class','nav');
+    navContent = navContent.replace('removeSubject-0','removeSubject-'+newSectionNumber);
+    navContent = navContent.replace('addSubject-0','addSubject-'+newSectionNumber);
+    newNav.innerHTML = navContent;
+    //calColumn
+    newCalColumn.setAttribute('class','calColumn');
+    newCalColumn.setAttribute('id','calColumn-'+newSectionNumber);
+    newCalColumn.innerHTML = calColumnContent
+    newSection.appendChild(newNav);
+    newSection.appendChild(newCalColumn);
+    mainColumn.appendChild(newSection)
+    console.log(newSection);
 }
+
+
+//note
+//work on the form duplication
