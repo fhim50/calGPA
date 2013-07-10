@@ -77,6 +77,7 @@ function calGPA() {
         }
         allTotal.push(result);
     }
+    console.log(allTotal);
    return allTotal; 
 }
 function testApp() {
@@ -85,7 +86,6 @@ function testApp() {
     displayArea.innerText = results;
     displayArea.style.visibility = 'visible';
 }
-
 function makeNewSection() {
     //adds a new section or new formset for calculating the gpa in that period
     var mainColumn = document.getElementById('mainColumn');
@@ -103,6 +103,7 @@ function makeNewSection() {
     var calColumn = allSection[0].getElementsByClassName('calColumn')[0]//get the first element with class calColume
     var navContent = nav.innerHTML;
     var calColumnContent = calColumn.innerHTML;
+    console.log(calColumnContent);
     //section
     newSection.setAttribute('class','section');
     newSection.setAttribute('id',newSectionId);
@@ -117,10 +118,11 @@ function makeNewSection() {
     newCalColumn.innerHTML = calColumnContent
     newSection.appendChild(newNav);
     newSection.appendChild(newCalColumn);
-    mainColumn.appendChild(newSection)
+    mainColumn.appendChild(newSection);
     console.log(newSection);
 }
 
-
+makeNewSection();
 //note
 //work on the form duplication
+// checkout calColum element.children
